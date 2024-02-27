@@ -7,9 +7,11 @@
     --cor--primaria: #000000;
     --cor--secundaria: #f6f6f6;
     --cor-terciaria: #EF6DAB;
+    --cor--azul: #64AADD;
 
     --fonte--primaria: "Sansita Swashed", system-ui;
     --fonte--secundaria: "Roboto", sans-serif;
+    --fonte--terciaria: "Sansita", sans-serif
 }
 
 * { /*reset css*/
@@ -31,14 +33,14 @@ body{
     gap: 80px;
 }
 .cabecalho__menu__link{
-    font-family: "Sansita", sans-serif;
+    font-family: var(--fonte--terciaria);
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
 }
 
-.apresentacao{
+/*.corpo{
     padding: 5% 15%;
     display:flex ;
     align-items: center;
@@ -46,6 +48,83 @@ body{
     gap: 82px;
 
 }
+
+.cozinhadakira{
+    padding: 5% 15%;
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+
+}
+*/
+.videoyoutube{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:10%;
+}
+
+.cozinhadakira__titulo{
+    padding: 1%;
+    color: #64AADD;
+    font-family: var(--fonte--primaria);
+    font-size: 2.5rem;
+    text-align: center;
+    display: block;
+}
+.cozinhadakira__texto{
+    font-family: var(--fonte--secundaria);
+    text-align: center;
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 5%;
+}
+
+.videoyoutube{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    position: relative; /*testando*/
+    column-gap:5%;
+    width:100%;
+    
+    
+}
+
+.video01 .video02 .video03{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte--terciaria);
+    color: var(--cor-terciaria);
+    padding: 5%;
+}
+
+.videoyoutube__titulo{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte--terciaria);
+    color: var(--cor-terciaria);
+    padding: 1%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.videoyoutube__descricao{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte--secundaria);
+    font-size: 1,5rem;
+    padding: 1%;
+    text-align: justify;
+}
+
+.videoyoutube__video{
+    display: block;
+}
+
 .apresentacao__conteudo{
     width: 50%;
     display: flex;
@@ -99,6 +178,17 @@ body{
     font-family: var(--fonte--secundaria);
     font-weight: 600;
 }
+
+.apresentacao__links__texto{
+    text-decoration: none;
+    font-style: italic;
+    color: var(--cor--azul);
+}
+
+.apresentacao__links__texto:hover{
+    color: var(--cor-terciaria);
+}
+
 .apresentacao__links__link:hover{
     background-color: var(--cor-terciaria);
 }
